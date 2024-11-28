@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-      <div><button><a href="http://localhost:3000/test_drf"><h1>TestDRFapi</h1></a></button></div>
-      <div><button><a href="http://localhost:3000/testpage"><h1>TestPage</h1></a></button></div>
+      <div><button><a href="/test_drf"><h1>TestDRFapi</h1></a></button></div>
+      <div><button><a href="/testpage"><h1>TestPage</h1></a></button></div>
       <div><button><a href="http://localhost:3000"><h1>HOME</h1></a></button></div>
       {children}
       </body>
