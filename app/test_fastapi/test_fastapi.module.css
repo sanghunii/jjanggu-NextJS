@@ -1,0 +1,13 @@
+.name_box {
+    color : black; 
+    background-color : white;
+    margin-top : 45px;
+    margin-left : 700px;
+    width:  320px;
+  }
+
+.button {
+  color : white;
+  background-color : black;
+  border: 10;
+}
