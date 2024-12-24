@@ -16,11 +16,14 @@ export default function test_fastapi() {
     const [response, setResponse] = useState("nothing");
 
     const FastGET = async () => {
-        const res = await axios.get("http://127.0.0.1:8000/", {
-            method: 'get',
+        const res = await axios.get("http://127.0.0.1:8000/person", {
+            params: {
+                'id': 4,
+            }
         });
-        setResponse(res.data.message);
-        console.log(res.data.message);
+        setResponse(res.data.person);
+        console.log(res.data.person);
+        console.log('hi');
     }
     
     
