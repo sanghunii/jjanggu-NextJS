@@ -1,5 +1,5 @@
 "use client"
-import Link from "next/link";
+
 import { useState } from "react";
 import styles from "./test_drf.module.css"
 
@@ -13,7 +13,7 @@ export default function test_drf() {
     const [id, setId] = useState(10) //여기 useState()안의 값을 바꿔가면서 응답결과를 확인해보자
 
     const DRF_get = async() => {
-        const res = await axios('http://127.0.0.1:8000/polls/drf_api',{
+        const res = await axios.get('http://127.0.0.1:8000/polls/drf_api',{
             params: {
                 'question_id': id
             }
