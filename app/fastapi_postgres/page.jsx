@@ -43,10 +43,7 @@ input tag공부해서 사용해 보기
     const [postState, setPostState] = useState('None');
     const fastPost = async() => {
         const res = await axios.post("http://127.0.0.1:8000/new_person", {
-        //axios에서는 request body를 data에 담아서 보내는듯 하다. 
-            data : {
-                "person_name": newName,
-            },
+                "name": newName,
         })
         if (res.status==HttpStatusCode.Created) {
             console.log("success to store");
