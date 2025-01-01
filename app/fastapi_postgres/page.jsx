@@ -46,9 +46,9 @@ input tag공부해서 사용해 보기
                 "name": newName,
         })
         if (res.status==HttpStatusCode.Created) {
-            console.log("success to store");
             setPostState(res.status);
             setPostId(res.data.id);
+            console.log("success to store");
         }
         else {
             console.log("fail to store");
@@ -101,6 +101,7 @@ input tag공부해서 사용해 보기
                 <p className={styles.text_box}>POST버튼을 누르면 DB에 저장</p>
                 <h1>post status : {postState}</h1>
                 <h1>Added person name : {newName}</h1>
+                <h1>ID : {postId}</h1>
             </div>
 
 
