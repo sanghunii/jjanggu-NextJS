@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <div><button><a href ="/chatbot"><h1>ChatBot</h1></a></button></div>
       <div><button><a href ="/fastapi_postgres"><h1>FastAPI-postgresql</h1></a></button></div>
       <div><button><a href="/test_fastapi"><h1>FastAPI-sqlite</h1></a></button></div>
       <div><button><a href="/test_drf"><h1>DjangoRestFramework</h1></a></button></div>

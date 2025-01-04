@@ -1,0 +1,16 @@
+.test_box {
+    color: black;
+    background-color:brown;
+    width: 720px;
+    margin-left: 500px;   
+    margin-top: 300px;
+}
+
+.other_box {
+    color:yellow;
+    background-color:blue;
+}
+
+.text_box {
+    color: white;
+}
