@@ -22,9 +22,9 @@ export default function chatbot() {
 
 
             <div className={styles.test_box}>
-                <h1>ChatBot Test</h1> 
+                <h1>Chat Test</h1> 
                 <button onClick={getChat}><h1>CreateResponse</h1></button>
-                <h3>ChatBot's Response : <br></br> {chat}</h3>
+                <h3>Chat Response : <br></br> {chat}</h3>
             </div>
 
         </div>
